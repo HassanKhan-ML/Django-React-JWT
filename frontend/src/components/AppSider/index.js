@@ -7,6 +7,7 @@ import {
   TeamOutlined,
   UserOutlined,
   LayoutOutlined,
+  MenuUnfoldOutlined,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
@@ -47,7 +48,64 @@ const AppSider = ({ history }) => {
             <Link to="/spacepage" />
             Space</Menu.Item>
         </SubMenu>
-        <Menu.Item key="10" icon={<FileOutlined />}>
+        <SubMenu key="sub3" icon={<MenuUnfoldOutlined />} title="Navigation">
+          <Menu.Item key="10">
+            <Link to="/affix" />Affix
+          </Menu.Item>
+          <Menu.Item key="11">
+            <Link to="/breadcrumb" />BreadcrumbPage
+          </Menu.Item>
+          <Menu.Item key="12">
+            <Link to="/dropdown" />Dropdown
+          </Menu.Item>
+          <Menu.Item key="13">
+            <Link to="/pageheader" />Page Header</Menu.Item>
+          <Menu.Item key="14">
+            <Link to="/pagination" />Pagination</Menu.Item>
+          <Menu.Item key="15">
+            <Link to="/steps" />Steps</Menu.Item>
+        </SubMenu>
+        <SubMenu key="sub4" icon={<MenuUnfoldOutlined />} title="Data Entry">
+          <Menu.Item key="16">
+            <Link to="/autocomplete" />Auto Complete
+          </Menu.Item>
+          <Menu.Item key="17">
+            <Link to="/cascader" />Cascader
+          </Menu.Item>
+          <Menu.Item key="18">
+            <Link to="/checkbox" />CheckBox
+          </Menu.Item>
+          <Menu.Item key="19">
+            <Link to="/datepicker" />Date Picker
+          </Menu.Item>
+          <Menu.Item key="20">
+            <Link to="/form" />Form</Menu.Item>
+          <Menu.Item key="21">
+            <Link to="/input" />Input</Menu.Item>
+          <Menu.Item key="22">
+            <Link to="/inputnumber" />Input Number</Menu.Item>
+          <Menu.Item key="23">
+            <Link to="/mentions" />Mention</Menu.Item>
+          <Menu.Item key="24">
+            <Link to="/radio" />Radio</Menu.Item>
+          <Menu.Item key="25">
+            <Link to="/rate" />Rate</Menu.Item>
+          <Menu.Item key="26">
+            <Link to="/select" />Select</Menu.Item>
+          <Menu.Item key="27">
+            <Link to="/sider" />Sider</Menu.Item>
+          <Menu.Item key="28">
+            <Link to="/switch" />Switch</Menu.Item>
+          <Menu.Item key="29">
+            <Link to="/timepicker" />Time Picker</Menu.Item>
+          <Menu.Item key="30">
+            <Link to="/transfer" />Transfer</Menu.Item>
+          <Menu.Item key="31">
+            <Link to="/treeselect" />Tree Select</Menu.Item>
+          <Menu.Item key="32">
+            <Link to="/upload" />Upload</Menu.Item>
+        </SubMenu>
+        <Menu.Item key="99" icon={<FileOutlined />}>
           Files
         </Menu.Item>
       </Menu>

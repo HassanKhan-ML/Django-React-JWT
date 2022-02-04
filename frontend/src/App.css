@@ -74,5 +74,17 @@ a.link:hover {
   /* line-height: 1.6; */
 }
 
+/* .mainLayout .ant-layout-sider .ant-menu { */
+  /* background-color: #f8f8f8 !important; */
+  /* padding: 0;
+  height: auto; */
+  /* line-height: 1.6; */
+/* } */
+
+
+.site-dropdown-context-menu {
+  color: #777;
+  background: #f7f7f7;
+}
 
 
